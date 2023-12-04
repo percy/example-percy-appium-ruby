@@ -16,7 +16,7 @@ def run_session(capability)
     true
   ).start_driver
   
-  percy_screenshot(driver, name: 'screenshot 1')
+  percy_screenshot(driver, name='screenshot 1')
 
   search_element = Appium::Core::Wait.until(timeout: 30) do
     driver.find_element(:accessibility_id, 'Search Wikipedia')
@@ -27,9 +27,9 @@ def run_session(capability)
     driver.find_element(:id, 'org.wikipedia.alpha:id/search_src_text')
   end
   search_input.send_keys('BrowserStack')
-  sleep(2)
+  sleep 5
   driver.hide_keyboard
-  percy_screenshot(driver, name: 'screenshot 2')
+  percy_screenshot(driver, name='screenshot 2')
 
   driver.quit
 end
@@ -38,7 +38,8 @@ if __FILE__ == $PROGRAM_NAME
   pixel_4 = {
     'caps' => {
       'platformName' => 'android',
-      'deviceName' => 'Google Pixel 4',
+      'deviceName' => 'Google Pixel 7',
+      'platformVersion' => '13.0',
       'app' => '<APP_URL>',
       'appium:percyOptions' => {
         'enabled' => true # enabled is default True. This can be used to disable visual testing for certain capabilities
