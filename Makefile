@@ -5,7 +5,10 @@ MARKER=.initialized-with-makefile
 $(NPM): $(NPMDEPS)
 	npm install
 
-install: bundle install
+install: bundle
+	bundle install
+
+bundle:
 
 clean:
 	rm -rf $$(cat .gitignore)
