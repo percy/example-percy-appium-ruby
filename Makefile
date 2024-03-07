@@ -16,5 +16,11 @@ clean:
 test-android:
 	$(NPM)/percy app:exec -- ruby tests/android.rb --verbose
 
+after-test-android:
+	$(NPM)/percy app:exec -- ruby after_tests/android.rb --verbose
+
 test-ios:
 	$(NPM)/percy app:exec -- ruby tests/ios.rb
+
+after-test-ios:
+	$(NPM)/percy app:exec -- ruby after_tests/ios.rb
