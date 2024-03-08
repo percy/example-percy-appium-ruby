@@ -1,8 +1,9 @@
 require 'appium_lib'
 require 'percy-appium-app'
 
-USER_NAME = 'App Automate User Name'
-ACCESS_KEY = 'App Automate Access key'
+USER_NAME = os.environ.get("BROWSERSTACK_USERNAME", "BROWSERSTACK_USERNAME")
+ACCESS_KEY = os.environ.get("BROWSERSTACK_ACCESS_KEY", "BROWSERSTACK_ACCESS_KEY")
+APP_URL = os.environ.get("APP_URL", "APP_URL")
 
 def run_session(capability)
 
@@ -40,7 +41,7 @@ if __FILE__ == $PROGRAM_NAME
       'platformName' => 'android',
       'deviceName' => 'Google Pixel 7',
       'platformVersion' => '13.0',
-      'app' => '<APP_URL>',
+      'app' => APP_URL,
       'appium:percyOptions' => {
         'enabled' => true # enabled is default True. This can be used to disable visual testing for certain capabilities
       },
