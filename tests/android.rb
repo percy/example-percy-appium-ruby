@@ -1,9 +1,9 @@
 require 'appium_lib'
 require 'percy-appium-app'
 
-USER_NAME = os.environ.get("BROWSERSTACK_USERNAME", "BROWSERSTACK_USERNAME")
-ACCESS_KEY = os.environ.get("BROWSERSTACK_ACCESS_KEY", "BROWSERSTACK_ACCESS_KEY")
-APP_URL = os.environ.get("APP_URL", "APP_URL")
+USER_NAME = ENV.fetch("BROWSERSTACK_USERNAME", "BROWSERSTACK_USERNAME")
+ACCESS_KEY = ENV.fetch("BROWSERSTACK_ACCESS_KEY", "BROWSERSTACK_ACCESS_KEY")
+APP_URL = ENV.fetch("APP_URL", "APP_URL")
 
 def run_session(capability)
 
