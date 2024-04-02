@@ -33,8 +33,8 @@ end
 if __FILE__ == $PROGRAM_NAME
   ios_capability = {
     'platformName' => 'ios',
-    'platformVersion' => '16',
-    'deviceName' => 'iPhone 12 Pro Max',
+    'platformVersion' => '15',
+    'deviceName' => 'iPhone 13',
     'app' => APP_URL,
     'appium:percyOptions' => {
       # enabled is default True. This can be used to disable visual testing for certain capabilities

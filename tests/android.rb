@@ -39,8 +39,8 @@ if __FILE__ == $PROGRAM_NAME
   pixel_4 = {
     'caps' => {
       'platformName' => 'android',
-      'deviceName' => 'Google Pixel 7',
-      'platformVersion' => '13.0',
+      'deviceName' => 'Samsung Galaxy S22 Plus',
+      'platformVersion' => '12.0',
       'app' => APP_URL,
       'appium:percyOptions' => {
         'enabled' => true # enabled is default True. This can be used to disable visual testing for certain capabilities
