@@ -1,0 +1,25 @@
+{
+  "name": "example-percy-appium-ruby",
+  "version": "1.0.0",
+  "description": "## Ruby Appium Tutorial",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "devDependencies": {
+    "@percy/cli": "^1.28.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/percy/example-percy-appium-ruby.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/percy/example-percy-appium-ruby/issues"
+  },
+  "homepage": "https://github.com/percy/example-percy-appium-ruby#readme"
+}
