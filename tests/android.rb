@@ -9,8 +9,8 @@ def run_session(capability)
 
   driver = Appium::Driver.new(
     {
-      'caps' => capability,
-      'appium_lib' => {
+      caps: capability,
+      appium_lib: {
         server_url: "https://#{USER_NAME}:#{ACCESS_KEY}@hub-cloud.browserstack.com/wd/hub"
       }
     }, 
