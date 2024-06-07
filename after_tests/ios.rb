@@ -8,8 +8,8 @@ APP_URL = ENV.fetch("APP_URL", "APP_URL")
 def run_session(capability)
   driver = Appium::Driver.new(
     {
-      'caps' => capability,
-      'appium_lib' => {
+      caps: capability,
+      appium_lib: {
         server_url: "https://#{USER_NAME}:#{ACCESS_KEY}@hub-cloud.browserstack.com/wd/hub"
       }
     }, 
@@ -24,7 +24,6 @@ def run_session(capability)
   end
   text_input.send_keys("test@browserstack.com\n")
   sleep 5
-  driver.hide_keyboard
   percy_screenshot(driver, 'screenshot 1')
   driver.quit
 end
