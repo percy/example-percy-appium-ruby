@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "devDependencies": {
-    "@percy/cli": "^1.28.3"
+    "@percy/cli": "^1.30.11"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
