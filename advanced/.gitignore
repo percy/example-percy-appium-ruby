@@ -1,0 +1,6 @@
+vendor/
+.bundle/
+Gemfile.lock
+node_modules/
+advanced-requests.json
+*.log

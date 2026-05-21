@@ -1,0 +1,8 @@
+# PER-8195 — global config for the percy-appium-app (Ruby gem) advanced
+# example. Per-screenshot keyword args in spec/advanced_spec.rb override
+# these.
+
+version: 2
+
+percy:
+  defer_uploads: false

@@ -1,5 +1,14 @@
 # example-percy-appium-ruby
 
+> **New:** This repo ships an [`advanced/`](./advanced) example covering the full applicable App Percy SDK feature surface for `percy-appium-app` (Ruby gem). See the [Percy SDK Feature Matrix](https://docs.percy.io/docs/sdk-feature-matrix) for cross-SDK coverage.
+
+## Examples
+
+| Example | What it shows | Run command |
+|---|---|---|
+| `./` (basic, at repo root) | Minimum viable: `percy_screenshot(driver, name)` for Android/iOS. Start here. | `make test` |
+| [`./advanced/`](./advanced) | Full applicable App Percy SDK feature surface: orientation, ignore/consider regions, fullscreen + status/nav bar heights, sync mode, test_case + labels. RSpec + percy-appium-app gem. See [`advanced/README.md`](./advanced/README.md). | `cd advanced && make test` |
+
 ## Ruby Appium Tutorial
 
 The tutorial assumes you're already familiar with Ruby and
