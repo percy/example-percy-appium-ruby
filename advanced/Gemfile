@@ -1,0 +1,5 @@
+source 'https://rubygems.org'
+
+gem 'appium_lib'
+gem 'percy-appium-app'
+gem 'rspec', '~> 3.13'
