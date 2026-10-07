@@ -9,7 +9,7 @@ RSpec.configure do |config|
     key = ENV.fetch('AA_ACCESS_KEY')
     $driver = Appium::Driver.new(
       {
-        'caps' => {
+        caps: {
           'platformName' => 'android',
           'deviceName' => ENV.fetch('DEVICE', 'Google Pixel 6'),
           'platformVersion' => ENV.fetch('OS_VERSION', '12.0'),
@@ -20,7 +20,7 @@ RSpec.configure do |config|
             'buildName' => ENV.fetch('PERCY_BUILD', 'Advanced Ruby Appium'),
           },
         },
-        'appium_lib' => {
+        appium_lib: {
           server_url: "https://#{user}:#{key}@hub-cloud.browserstack.com/wd/hub",
         },
       },

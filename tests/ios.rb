@@ -7,8 +7,8 @@ ACCESS_KEY = 'App Automate Access key'
 def run_session(capability)
   driver = Appium::Driver.new(
     {
-      'caps' => capability,
-      'appium_lib' => {
+      caps: capability,
+      appium_lib: {
         server_url: "https://#{USER_NAME}:#{ACCESS_KEY}@hub-cloud.browserstack.com/wd/hub"
       }
     }, 
@@ -33,7 +33,7 @@ if __FILE__ == $PROGRAM_NAME
   ios_capability = {
     'platformName' => 'ios',
     'platformVersion' => '16',
-    'deviceName' => 'iPhone 12 Pro Max',
+    'deviceName' => 'iPhone 14',
     'app' => '<APP_URL>',
     'appium:percyOptions' => {
       # enabled is default True. This can be used to disable visual testing for certain capabilities
