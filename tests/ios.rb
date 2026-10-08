@@ -41,6 +41,7 @@ if __FILE__ == $PROGRAM_NAME
       'enabled' => true
     },
     'bstack:options' => {
+        'appiumVersion' => ENV.fetch('APPIUM_VERSION', '2.19.0'),
       'projectName' => 'My Project',
       'buildName' => 'test percy_screnshot',
       'sessionName' => 'BStack first_test',
